@@ -34,6 +34,7 @@
     #container-1{
         display:grid;
         grid-template-columns: 1fr 1fr;
+       
         
     
     }
@@ -98,6 +99,10 @@
     
     .paragraph-2{
         color:green;
+    }
+    #thirddiv{
+        display: block;
+        
     }
     
 
