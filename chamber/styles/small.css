@@ -1,0 +1,660 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.header-nav {
+    display: grid;
+    background-color: yellow;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0.5rem 1rem;
+}
+
+nav {
+    grid-column: 4;
+    grid-row: 1/2;
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.8rem 2vw;
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-size: 0.95rem;
+    background: linear-gradient(90deg, transparent, black, transparent) bottom / var(--d, 0) 3px no-repeat;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(22, 65, 80, 0.3);
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+#navigation-button span:nth-child(1) {
+    display: block;
+}
+
+#navigation-button span:nth-child(2) {
+    display: none;
+}
+
+#navigation-button.open span:nth-child(1) {
+    display: none;
+}
+
+#navigation-button.open span:nth-child(2) {
+    display: block;
+}
+
+.logo {
+    grid-row: 1/3;
+    width: 150px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-logo {
+    border-radius: 30px;
+    width: 40px;
+    padding: 8px;
+}
+
+.social-logo:hover {
+    background-color: rgb(22, 65, 80);
+    color: white;
+}
+
+.social {
+    place-self: center;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+header {
+    background-color: yellow;
+}
+
+#header-fulldate {
+    background-color: rgba(255, 255, 0, 0.25);
+    color: black;
+    padding: 10px;
+    height: 40px;
+    text-align: center;
+    margin-left: 10%;
+    width: 80%;
+    grid-column: 1/8;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 2px;
+    padding: 0px;
+    margin: 10px 10px 80px 10px;
+    font-size: .7rem;
+
+}
+
+main .hero {
+    grid-row: 1;
+    border: 1px solid rgb(22, 65, 80);
+    position: relative;
+    justify-content: center;
+}
+
+
+
+main .news-release {
+    grid-row: 4;
+    border: 1px solid rgb(22, 65, 80);
+    padding: 10px;
+    background-color: yellow;
+}
+
+#spotlight-section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid rgb(22, 65, 80);
+    margin-bottom: 20px;
+
+}
+
+#spotlight-section .spotlight1 {
+    border: 1px solid rgb(22, 65, 80);
+    padding: 20px;
+    margin: 15px 20px 10px 20px;
+    align-items: center;
+}
+
+#spotlight-section .spotlight2 {
+    border: 1px solid rgb(22, 65, 80);
+    padding: 20px;
+    margin: 0px 20px 10px 20px;
+    align-items: center;
+}
+
+#spotlight-section .spotlight3 {
+    border: 1px solid rgb(22, 65, 80);
+    padding: 20px;
+    align-items: center;
+    margin: 0px 20px 10px 20px;
+    display: none;
+}
+
+main .join {
+    display: none;
+}
+
+main .event {
+    grid-row: 2;
+    border: 1px solid rgb(22, 65, 80);
+    background-color: yellow;
+    padding: 5px;
+}
+
+main .event p a {
+    text-decoration: none;
+    color: rgb(22, 65, 80);
+}
+
+main .weather {
+    grid-row: 3;
+    border: 1px solid rgb(22, 65, 80);
+    padding: 10px;
+    margin-top: 15px;
+    background-color: yellow;
+}
+
+main .weather h3 strong {
+    color: blue;
+}
+
+main .weather {
+    width: auto;
+}
+
+main .weather img {
+    width: 20%;
+    margin-left: 35%;
+}
+
+
+footer {
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding: .8em;
+}
+
+.footer-logo {
+    height: 70%;
+    width: 100%;
+    justify-content: center;
+}
+
+footer img {
+    height: 150px;
+
+}
+
+
+.location a {
+    text-decoration: none;
+}
+
+.footer1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: .8em;
+}
+
+.footer2 {
+    border-top: 1px solid black;
+    padding-top: .8em;
+}
+
+.footer2 p {
+    margin: 0;
+}
+
+.banner {
+    background: yellow;
+    display: none;
+}
+
+.banner-box {
+    padding-top: 15px;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.banner-text {
+    flex-grow: 1;
+}
+
+.banner-close {
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid black;
+    background: linear-gradient(90deg, transparent, black, transparent) bottom / var(--d, 0) 3px no-repeat;
+    transition: 0.5s;
+}
+
+.banner-close:hover {
+    background-color: rgba(22, 65, 80, 0.3);
+    --d: 75%;
+}
+
+.banner-text,
+.banner-close>span {
+    color: black;
+    font-weight: bold;
+}
+
+.banner.banner-shown {
+    display: block;
+}
+
+
+main section picture.hero-image {
+    width: 50%;
+
+}
+
+main section picture.hero-image img {
+    width: 100%;
+    z-index: 1;
+}
+
+.hero h1 {
+    z-index: 2;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    font-family: 'Kurale', Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 4rem;
+
+}
+
+.hero .joinButton {
+    position: absolute;
+    z-index: 3;
+    bottom: 7%;
+    text-decoration: none;
+    background-color: yellow;
+    border: 2px solid rgb(22, 65, 80);
+    color: black;
+    right: 2.5%;
+    border-radius: 10px;
+    max-width: 20rem;
+    padding: 5px;
+}
+
+.joinButton a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+
+    font-family: 'Cardo', Arial, Helvetica, sans-serif;
+    color: black;
+
+    font-size: 0.95rem;
+    background: linear-gradient(90deg, transparent, black, transparent) bottom / var(--d, 0) 3px no-repeat;
+    transition: 0.5s;
+}
+
+.joinButton a:hover {
+    background-color: rgba(22, 65, 80, 0.3);
+    --d: 75%;
+}
+
+#spotlight-section .spotlight2 img {
+    width: 70%;
+}
+
+#spotlight-section .spotlight1 img {
+    width: 70%;
+}
+
+/*Discover Page*/
+main.discover-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 10%;
+
+    padding-bottom: 0px;
+
+}
+
+.discover-img:hover {
+    box-shadow: 7px 7px 7px rgba(22, 65, 80, 0.9);
+}
+
+/* Join page */
+.join-h1 {
+    text-align: center;
+}
+
+.membership-div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.membership-div {
+    padding: 2rem;
+}
+
+/* --------FORM---- */
+
+/* Join Page*/
+
+.text {
+    margin-left: 5%;
+}
+
+text span#orange {
+    color: yellow;
+}
+
+.main-join-area {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 5%;
+}
+
+form {
+    animation-name: slideup;
+    animation-duration: 0.5s;
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    width: 90vw;
+    box-shadow: 0 0 4px grey;
+}
+
+.asterik {
+    color: rgb(127, 52, 52);
+    font-weight: bolder;
+}
+
+fieldset {
+    border-radius: 3px;
+    border: 1px solid #042b42;
+    width: 83vw;
+    margin-bottom: 2rem;
+}
+
+legend {
+    padding: 0.4rem;
+    font-weight: bolder;
+}
+
+.block-text,
+.block-input {
+    display: block;
+}
+
+label {
+    height: 5rem;
+}
+
+.block-radio {
+    display: block;
+    height: min-content;
+    padding: 10px;
+}
+
+.block-input {
+    background-color: rgba(177, 177, 177, 0.199);
+    width: 98%;
+    border: none;
+    min-height: 2.5rem;
+    border-bottom: 2px solid yellow;
+}
+
+.block-input:focus {
+    outline: none;
+    border-bottom: 2px solid #088dda;
+    background-color: #6cc5f81e;
+}
+
+.membership-plan {
+    font-weight: 700;
+}
+
+.membership-plan h3 {
+    background-color: rgba(8, 59, 89, 0.5);
+}
+
+.join-btn {
+    color: yellow;
+    background-color: rgba(22, 65, 80, 0.9);
+    border: none;
+    height: 4rem;
+    width: 100%;
+}
+
+.join-btn:hover {
+    background-color: #0B7AB8;
+}
+
+/* thankyou page */
+#thanks-main {
+    display: block;
+    align-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.thanks {
+    align-items: center;
+    align-self: center;
+}
+
+/*Directory Code*/
+.directory-h1 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.basic-grid {
+    display: inline;
+    margin-top: 0;
+    padding: 0;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.companyGrid,
+.companyList {
+    color: black;
+    padding: 1em;
+    margin-bottom: 15PX;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.company-phone {
+    margin-top: 5px;
+}
+
+.company-site {
+    text-decoration: none;
+    color: black;
+}
+
+.companyGrid {
+
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.companyCard {
+    background-color: yellow
+}
+
+.companyGrid>* {
+    border-radius: 5px 15px;
+    border: 2px solid black;
+    margin: 30px;
+    font-size: 18px;
+}
+
+.companyGrid>*:hover {
+    box-shadow: 0 0 0 10px #0B7AB8;
+}
+
+.list,
+.grid {
+    width: 100px;
+    color: black;
+    padding: 0.6em;
+    font-size: 1.3em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    border: none;
+    height: 4rem;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.list:hover {
+    background-color: #0B7AB8;
+}
+
+.grid:hover {
+    background-color: #0B7AB8;
+}
+
+
+.companyList div {
+    padding: 0.1em;
+
+    color: black;
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 15px 5px;
+    margin-bottom: 10px;
+}
+
+.companyList>:nth-child(even):hover,
+.companyList>:nth-child(odd):hover {
+    background-color: rgba(22, 65, 80, 0.8);
+}
+
+.companyList>:nth-child(even),
+.companyList>*:nth-child(odd) {
+    background-color: black;
+    color: white;
+}
+
+
+
+.website-div {
+    word-wrap: break-word;
+}
+
+.companyGrid .website-div a:visited {
+    color: blue;
+}
+
+.companyList .website-div a:visited,
+.companyList .website-div a {
+    color: black;
+}
+
+/*contact page*/
+.contact-us-info h2 {
+    background-color: #064d76;
+    padding: 15px;
+}
+
+#contact-us-btn {
+    background-color: yellow;
+    border: none;
+    height: 4rem;
+    width: 100%;
+}
+
+#contact-us-btn:hover {
+    background-color: rgba(22, 65, 80, 0.9);
+}
+
+/*fonts*/
+main p {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Cardo', Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Cardo', Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Cardo', Helvetica, sans-serif;
+}
+
+p {
+    font-family: 'Kurale', 'Times New Roman', Times, serif;
+}

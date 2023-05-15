@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Eko Chambers of Commerce | Homepage</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="icon" href="hp-favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Kurale&display=swap" rel="stylesheet">
+
+
+
+
+        <!-- STYLE SHEETS -->
+        <!-- phone-default -->
+        <link href="styles/small.css" rel="stylesheet">
+        <!-- enhance-tablet -->
+        <link href="styles/medium.css" rel="stylesheet">
+        <!-- enhance-desktop -->
+        <link href="styles/large.css" rel="stylesheet">
+
+
+
+    </head>
+
+    <body>
+        <!-- HEADER HERE -->
+        <header>
+
+            <div class="banner">
+                <div class="banner-box">
+                    <div class="banner-text">Come join us for the Chamber Meet and Greet every Wednesday at 7:00 p.m.
+                    </div>
+                    <button class="banner-close" type="button">
+                        close
+                    </button>
+                </div>
+            </div>
+
+            <div class=" header-nav">
+                <a href="index.html"><img class="logo" src="./images/ecoc.png" alt="Logo for Eko Chambers
+                of Commerce"></a>
+                <div class="company-name">
+                    <h2>Eko</h2>
+                    <p>Chambers of Commerce</p>
+                </div>
+                <div id="header-fulldate"></div>
+                <div class="social">
+                    <a href="https://facebook.com" target="_blank">
+                        <img class="social-logo" src="./images/Facebook_Logo.png" alt="A facebook Logo">
+                    </a>
+                    <a href="https://www.linkedin.com/login" target="_blank">
+                        <img class="social-logo" src="./images/linkedin_logo.png" alt="A linkedin logo">
+                    </a>
+                </div>
+                <!-- NAVIGATION HERE -->
+                <nav>
+                    <button id="navigation-button"><span>&#8801;</span><span>x</span></button>
+                    <ul id="nav-list">
+                        <li><a href="./discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+        </header>
+
+        <!-- CONTENT HERE -->
+        <main>
+            <section class="hero">
+                <picture class="hero-image">
+                    <source srcset="images/large-long-corridor-showcase.jpg" media="(min-width: 1028px)">
+                    <source srcset="images/medium-long-corridor-showcase.jpg" media="(min-width: 560px)">
+                    <img src="images/small-long-corridor-showcase.jpg" alt="hero-image">
+                </picture>
+                <h1>Welcome To Eko </h1>
+                <div class="joinButton"><a href="#">Join The Chamber</a></div>
+            </section>
+            <section class="event">
+                <h2>Ribbon Cutting</h2>
+                <h3>African Fashion House ✂</h3>
+                <p>Join us for the grand opening of the African Fashion House, Thursday at
+                    1:00p.m.<span><a href="#" target="blank"> more
+                            details...</a></span></p>
+            </section>
+            <div class="weather">
+                <div class="weather-info">
+                    <img src="" id="weather-icon" alt="weather icon">
+                    <h3><span id="temp-value"></span>&deg;F</h3>
+                </div>
+                <p id="weather-desc"></p>
+                <hr>
+                <div class="wind-speed">
+                    <p>Wind Speed: </p>
+                    <p><span id="windspeed-value"></span>mph</p>
+                </div>
+                <div class="wind-chill">
+                    <p>Wind Chill:</p>
+                    <p id="windchill-value"> </p>
+                </div>
+
+            </div>
+
+            <section class="news-release">
+                <h2>News Release</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam eligendi quod consectetur! Fuga
+                    dignissimos dolore fugiat. Deleniti fuga, temporibus dolor dolorem eligendi laudantium magni
+                    explicabo eum quod voluptate, eos iste.</p>
+            </section>
+            <div class="join">
+                <div class="joinButton"><a href="#">Join Us!</a></div>
+                <p>Discover how to join the Eko Chamber of Commerce and how it will benefit your organization! </p>
+
+            </div>
+
+            <section id="spotlight-section">
+                <div class="spotlight1" id="spotlight1"></div>
+                <div class="spotlight2" id="spotlight2"></div>
+                <div class="spotlight3" id="spotlight3"></div>
+            </section>
+        </main>
+
+
+        <!-- FOOTER HERE -->
+        <footer>
+            <div class="footer1">
+                <div class="footer-logo">
+                    <img src="images/ecoc.png" alt="footer logo">
+                </div>
+                <div class="footer-name">
+                    <h3>Eko Chamber
+                        of Commerce</h3>
+                    <p>20 Street Address Lagos,Nigeria</p>
+                </div>
+                <div class="info">
+                    <div class="contact-info">ukaegbueze442@gmail.com</div>
+                    <div class="contact-info">(+234) 7061-412368</div>
+                    <!-- location map:-->
+                    <div class="location">
+                        <a href="https://www.google.com/maps/d/edit?mid=1gPFuTc_voFKUzQf-4daa-B3kJMNQ-nk&usp=sharing"
+                            target="blank">📍 Location Map</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer2">
+                <p>&copy;<span id="year"></span> Eko Chamber</p>
+                <p>Ukaegbu Japhet Oscar</p>
+                <p>WDD 230 Project</p>
+                <div>
+                    <p>Last Modification: <span id="date"></span></p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./scripts/script.js"></script>
+        <script src="./scripts/windchill.js"></script>
+        <script src="./scripts/spotlights.js"></script>
+    </body>
+
+</html>
