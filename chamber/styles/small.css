@@ -14,7 +14,7 @@ html {
 
 .header-nav {
     display: grid;
-    background-color: yellow;
+    background-color: rgba(100, 98, 0, 0.9);
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 0.5rem 1rem;
 }
@@ -106,7 +106,7 @@ nav ul.open {
 }
 
 header {
-    background-color: yellow;
+    background-color: rgba(100, 98, 0, 0.9);
 }
 
 #header-fulldate {
@@ -148,7 +148,7 @@ main .news-release {
     grid-row: 4;
     border: 1px solid rgb(22, 65, 80);
     padding: 10px;
-    background-color: yellow;
+    background-color: rgba(100, 98, 0, 0.9);
 }
 
 #spotlight-section {
@@ -188,7 +188,7 @@ main .join {
 main .event {
     grid-row: 2;
     border: 1px solid rgb(22, 65, 80);
-    background-color: yellow;
+    background-color: rgba(100, 98, 0, 0.9);
     padding: 5px;
 }
 
@@ -202,7 +202,7 @@ main .weather {
     border: 1px solid rgb(22, 65, 80);
     padding: 10px;
     margin-top: 15px;
-    background-color: yellow;
+    background-color: rgba(100, 98, 0, 0.9);
 }
 
 main .weather h3 strong {
@@ -220,7 +220,7 @@ main .weather img {
 
 
 footer {
-    background-color: yellow;
+    background-color: rgba(100, 98, 0, 0.9);
     color: black;
     text-align: center;
     padding: .8em;
@@ -258,7 +258,7 @@ footer img {
 }
 
 .banner {
-    background: yellow;
+    background: rgba(100, 98, 0, 0.9);
     display: none;
 }
 
@@ -325,7 +325,7 @@ main section picture.hero-image img {
     z-index: 3;
     bottom: 7%;
     text-decoration: none;
-    background-color: yellow;
+    background-color: rgba(100, 98, 0, 0.9);
     border: 2px solid rgb(22, 65, 80);
     color: black;
     right: 2.5%;
@@ -399,7 +399,7 @@ main.discover-main {
 }
 
 text span#orange {
-    color: yellow;
+    color: rgba(100, 98, 0, 0.9);
 }
 
 .main-join-area {
@@ -455,7 +455,7 @@ label {
     width: 98%;
     border: none;
     min-height: 2.5rem;
-    border-bottom: 2px solid yellow;
+    border-bottom: 2px solid rgba(100, 98, 0, 0.9);
 }
 
 .block-input:focus {
@@ -473,7 +473,8 @@ label {
 }
 
 .join-btn {
-    color: yellow;
+    color: rgba(100, 98, 0, 0.9);
+    
     background-color: rgba(22, 65, 80, 0.9);
     border: none;
     height: 4rem;
@@ -536,7 +537,7 @@ label {
 }
 
 .companyCard {
-    background-color: yellow
+    background-color: rgba(100, 98, 0, 0.9);
 }
 
 .companyGrid>* {
@@ -581,7 +582,7 @@ label {
     padding: 0.1em;
 
     color: black;
-    background-color: yellow;
+    background-color: rgba(100, 98, 0, 0.9);
     border: 2px solid black;
     border-radius: 15px 5px;
     margin-bottom: 10px;
@@ -620,7 +621,7 @@ label {
 }
 
 #contact-us-btn {
-    background-color: yellow;
+    background-color: rgba(100, 98, 0, 0.9);
     border: none;
     height: 4rem;
     width: 100%;
