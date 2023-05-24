@@ -164,6 +164,9 @@
     form .child1 {
         flex: 75%;
     }
+    .banner{
+        text-decoration-color: black;
+    }
 
     /*contact page*/
 
