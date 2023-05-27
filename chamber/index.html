@@ -78,9 +78,9 @@
         <main>
             <section class="hero">
                 <picture class="hero-image">
-                    <source srcset="images/large-long-corridor-showcase.jpg" media="(min-width: 1028px)">
-                    <source srcset="images/medium-long-corridor-showcase.jpg" media="(min-width: 560px)">
-                    <img src="images/small-long-corridor-showcase.jpg" alt="hero-image">
+                    <source srcset="images/wdd230-org-large.jpg" media="(min-width: 1028px)">
+                    <source srcset="images/wdd230-org-medium.jpg" media="(min-width: 560px)">
+                    <img src="images/small-wdd230-org.jpg" alt="hero-image">
                 </picture>
                 <h1>Welcome To Eko </h1>
                 <div class="joinButton"><a href="#">Join The Chamber</a></div>
@@ -92,7 +92,7 @@
                     1:00p.m.<span><a href="#" target="blank"> more
                             details...</a></span></p>
             </section>
-            <div class="weather">
+            <!-- <div class="weather">
                 <div class="weather-info">
                     <img src="" id="weather-icon" alt="weather icon">
                     <h3><span id="temp-value"></span>&deg;F</h3>
@@ -108,7 +108,23 @@
                     <p id="windchill-value"> </p>
                 </div>
 
-            </div>
+            </div> -->
+            <div class="weather">
+                <div class="weather-info">
+                  <img src="" id="weather-icon" alt="weather icon">
+                  <h3><span id="temp-value"></span>&deg;F</h3>
+                </div>
+                <p id="weather-desc"></p>
+                <hr>
+                <div class="wind-speed">
+                  <p>Wind Speed: </p>
+                  <p><span id="windspeed-value"></span>mph</p>
+                </div>
+                <div class="wind-chill">
+                  <p>Wind Chill:</p>
+                  <p id="windchill-value"> </p>
+                </div>
+              </div>
 
             <section class="news-release">
                 <h2>News Release</h2>
@@ -166,6 +182,8 @@
         <script src="./scripts/windchill.js"></script>
         <script src="./scripts/spotlights.js"></script>
         <script src="scripts/banner.js"></script>
+        
+        
         
     </body>
 
