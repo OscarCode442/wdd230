@@ -1,0 +1,35 @@
+/* Add your CSS styles here */
+
+/* Gallery */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .gallery-image {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  .gallery-image img {
+    width: 100%;
+  }
+  
+  .gallery-image p {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  /* Hover effect */
+  .gallery-image:hover {
+    filter: brightness(70%);
+    cursor: pointer;
+    
+  }
+
+  h1{
+    text-align: center;
+    text-decoration: aliceblue;
+  }
