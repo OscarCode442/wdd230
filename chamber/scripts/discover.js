@@ -23,7 +23,11 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
     var lastVisit = localStorage.getItem("lastVisit");
     var currentDate = new Date().getTime();
-    var daysPassed = Math.round((currentDate - lastVisit) / (1000 * 60 * 60 * 24));
+    var daysPassed = 0;
+
+    if (lastVisit) {
+        daysPassed = Math.round((currentDate - lastVisit) / (1000 * 60 * 60 * 24));
+    }
 
     // Update last visit
     localStorage.setItem("lastVisit", currentDate);
