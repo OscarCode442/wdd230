@@ -21,7 +21,6 @@ var year = currentDate.getFullYear();
 
 // Format the date string
 var formattedDate = weekdays[currentDate.getDay()] + ", " + day + " " + months[month] + " " + year;
-document.getElementById("date").textContent = formattedDate
 document.getElementById("header-fulldate").textContent = formattedDate
 
 
