@@ -659,3 +659,8 @@ h3 {
 p {
     font-family: 'Kurale', 'Times New Roman', Times, serif;
 }
+
+.lazy{
+    padding-bottom: 10%;
+}
+   

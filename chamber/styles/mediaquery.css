@@ -1,0 +1,35 @@
+.imagetext {
+    padding-bottom: 50%;
+}
+
+.maze{
+    padding-bottom: 10%;
+}
+
+body,main{
+    display: block;
+      justify-content: left;
+      align-items: center;
+      height: 100vh;
+      ;
+  }
+
+
+.abel-text.join-form  {
+    max-width: 300px; /* Adjust the max-width as per industry standard */
+    margin: 0 auto; /* Center the form horizontally */
+  }
+  .join-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .join-btn:hover {
+    background-color: #0056b3;
+  }
+ 
