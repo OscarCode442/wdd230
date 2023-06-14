@@ -1,3 +1,4 @@
+
 // Lazy load images
 const lazyImages = document.querySelectorAll('.lazy');
 
@@ -6,9 +7,10 @@ const lazyLoad = target => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const img = entry.target;
-        const src = img.getAttribute('data-src');
+        // Use dataset to access custom data attributes
+        const src = img.dataset.src;
 
-        img.setAttribute('src', src);
+        img.src = src; // Use the src property instead of setAttribute
         img.classList.remove('lazy');
         observer.unobserve(img);
       }
