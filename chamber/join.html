@@ -50,42 +50,57 @@
         <link href="styles/large.css" rel="stylesheet">
   <link rel="stylesheet" href="./styles/discover.css">
   <link rel="stylesheet" href="styles/mediaquery.css">
+  <!-- <link rel="stylesheet" href="/chamber/styles/join.css"> -->
 </head>
 <body>
-    <div class="main-area main-join-area">
+     <div class="main-area main-join-area">
         <h1 class="abel-text">Join us at Inland Valley!</h1>
     
-        <form class="abel-text join-form" method="GET" action="thankyou.html">
-            <fieldset>
-                <legend>Basic Information</legend>
-                <label class="block-text">First Name<span class="hy">*</span>
-                <input class="block-input" type="text" name="fname" required></label>
-                <label class="block-text">Last Name<span class="hy">*</span>
-                <input class="block-input" type="text" name="lname" required></label>
-                <label class="block-text">Business Position
-                <input class="block-input" type="text" name="Position"
-                title="Can only include alpha characters, hyphens, and spaces and must contain a minimum of 7 characters" pattern="[A-Za-z -]"></label>
-                <label class="block-text">Email<span class="hy">*</span>
-                <input placeholder=" someone@email.com" class="block-input" type="email" name="email" required></label>
-                <label class="block-text">Telephone<span class="hy">*</span>
-                <input class="block-input" type="tel" name="phone" required></label>
-                <label class="block-text">Business Name/Title<span class="hy">*</span>
-                <input class="block-input" name="business" type="text" required></label>
-            </fieldset>
-            <fieldset>
-                <legend>Membership</legend>
-                <div>Membership Level</div>
-                <label  class="block-radio"><input type="radio" name="membership" value="np"> NP Membership</label>
-                <label  class="block-radio"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
-                <label  class="block-radio"><input type="radio" name="membership" value="silver"> Silver Membership</label>
-                <label  class="block-radio"><input type="radio" name="membership" value="gold"> Gold Membership</label>
-            </fieldset>
-            <label  class="block-text">
+      
+   <form id="join-form" class="abel-text join-form" method="GET" action="thankyou.html">
+     <!-- Use a div tag to create a container for the form elements -->
+     <div class="form-container">
+     <!-- Use an h2 tag to replace the legend tag for the heading -->
+     <h2 class="form-heading">Basic Information</h2>
+     <label class="block-text">First Name<span class="hy">*</span>
+      <input class="block-input" type="text" name="fname" required aria-required="true"></label>
+     <label class="block-text">Last Name<span class="hy">*</span>
+      <input class="block-input" type="text" name="lname" required aria-required="true"></label>
+     <label class="block-text">Business Position
+      <input class="block-input" type="text" name="Position"
+        title="Can only include alpha characters, hyphens, and spaces"
+        pattern="[A-Za-z -]+" minlength="7"></label>
+     <label class="block-text">Email<span class="hy">*</span>
+      <input placeholder=" someone@email.com" class="block-input"
+        type="email" name="email" required aria-required="true"></label>
+     <label class="block-text">Telephone<span class="hy">*</span>
+      <input class="block-input" type="tel" name="phone" required aria-required="true"></label>
+     <label class="block-text">Business Name/Title<span class="hy">*</span>
+      <input class="block-input" name="business" type="text" required aria-required="true"></label>
 
-            <input type="hidden" value="curdateandtime" id="curtime">
-            <input class="join-btn" type="submit" value="Join The Chamber">
-            
-        </form>
+     <!-- Use an h2 tag to replace the legend tag for the heading -->
+     <h2 class="form-heading">Membership</h2>
+     <!-- Use a p tag to wrap the text "Membership Level" -->
+     <p class="form-subheading">Membership Level</p>
+     <label  class="block-radio"><input type="radio" name="membership"
+        value="np"> NP Membership</label>
+     <label  class="block-radio"><input type="radio" name="membership"
+        value="bronze"> Bronze Membership</label>
+     <label  class="block-radio"><input type="radio" name="membership"
+        value= "silver"> Silver Membership</label>
+     <label  class= "block-radio"><input type= "radio" name= "membership"
+        value= "gold"> Gold Membership</label>
+
+     <!-- Add a closing label tag -->
+     <label  class= "block-text">
+      <!-- Use JavaScript to get and set the current date and time -->
+      <input type= "hidden" value= "" id= "curtime">
+     </label> 
+     <!-- Add an onclick attribute to run a function when the submit button is clicked -->
+     <input class= "join-btn" type= "submit" value= "Join The Chamber"
+      onclick = "setTime()">
+     </div>  
+    </form>
         
     </div>
 
@@ -128,7 +143,8 @@
   <script src="../chamber/scripts/discover.js"></script>
   <script src="../chamber/scripts/banner.js"></script>
   <script src="../chamber/scripts/script.js"></script>
-  <script src="./scripts/script.js"></script>
+  <script src="../scripts/script.js"></script>
+
  
 
 </body>
