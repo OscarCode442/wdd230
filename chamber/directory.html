@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/directory.css">
+  <link rel="stylesheet" href="/chamber/styles/directory2.css">
+  
+ 
+  
+  
+  <title>Business Directory</title>
+</head>
+<body>
+  <header>
+    <!-- Header content: site logo and navigation menu -->
+    <div class="header-nav">
+      <a href="index.html"><img class="logo" src="../chamber/images/ecoc.png" alt="Logo for Eko Chambers of Commerce"></a>
+      <div class="company-name">
+        <h2>Eko</h2>
+        <p>Chambers of Commerce</p>
+      </div>
+      <div id="header-fulldate"></div>
+      <div class="social">
+        <a href="https://facebook.com" target="_blank">
+          <img class="social-logo" src="./images/Facebook_Logo.png" alt="A Facebook Logo">
+        </a>
+        <a href="https://www.linkedin.com/login" target="_blank">
+          <img class="social-logo" src="./images/linkedin_logo.png" alt="A LinkedIn logo">
+        </a>
+      </div>
+      <!-- Navigation -->
+      <nav>
+        <button id="navigation-button"><span>&#8801;</span><span>x</span></button>
+        <ul id="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Business Directory</h1>
+
+    <div class="directory">
+      <!-- Business directory content will be dynamically generated from JSON data -->
+    </div>
+  </main>
+
+  <footer>
+    <!-- Footer content: links or information -->
+    <div class="footer1">
+      <div class="footer-logo">
+        <img src="images/ecoc.png" alt="Footer logo">
+      </div>
+      <div class="footer-name">
+        <h3>Eko Chamber of Commerce</h3>
+        <p>3 Ejike Ufonna Street, Ilasamaja, Lagos, Nigeria</p>
+      </div>
+      <div class="info">
+        <div class="contact-info">ukaegbueze442@gmail.com</div>
+        <div class="contact-info">(+234) 7061-412368</div>
+        <!-- location map: -->
+        <div class="location">
+          <a href="https://googl/maps/9swQD321qhPYnwbr6" target="_blank">📍 Location Map</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer2">
+      <p>&copy;<span id="year"></span> Eko Chamber</p>
+      <p>Ukaegbu Japhet Oscar</p>
+      <p>WDD 230 Project</p>
+      <div>
+        <p>Last Modification: <span id="date"></span></p>
+      </div>
+      <div>
+        <p><span id="lastvisited"></span></p>
+      </div>
+    </div>
+
+  </footer>
+  <script src="./scripts/directory.js"></script>
+</body>
+</html>
